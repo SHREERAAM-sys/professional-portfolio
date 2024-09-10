@@ -61,7 +61,7 @@ const Skills: React.FC = () => {
                     variant="h6"
                     component="div"
                     align="center"
-                    className="mt-3 text-sm font-semibold text-white" // Increase the size of text and ensure it is visible
+                    className="mt-3 text-sm md:text-sm lg:text-sm font-semibold text-white" // Increase the size of text and ensure it is visible
                   >
                     {skill.name}
                   </Typography>
