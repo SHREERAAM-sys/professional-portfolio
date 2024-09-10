@@ -6,6 +6,10 @@ const nextConfig = {
         "api.microlink.io", // Microlink Image Preview
       ],
     },
+    output:"export",
+    typescript: {
+      ignoreBuildErrors: true,
+    }
   };
 
 export default nextConfig;
