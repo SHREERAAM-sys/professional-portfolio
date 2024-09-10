@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <div className="relative py-20 pt-24" id="experience">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        My <span className="text-purple">Work Experience</span>
       </h1>
       <div className="justify-center relative my-16">
         <VerticalTimeline animate={true} lineColor="#ffffff">

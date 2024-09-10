@@ -100,7 +100,7 @@ export const navItems = [
     {
       id: 3,
       title: "Tasty Trails",
-      des: "A surpless food sharing platform helpful to reduces food waste",
+      des: "A surplus food sharing platform helpful to reduces food waste",
       img: "/tasty-trails.webp",
       iconLists: ["/re.svg", "/redux.svg","/exp.svg","/ts.svg", "/sass.svg", "/mongo.svg"],
       link: "https://github.com/shreeraam-ramachandran/Tasty-Trails",
