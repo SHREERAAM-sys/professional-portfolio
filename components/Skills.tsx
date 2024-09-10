@@ -55,13 +55,13 @@ const Skills: React.FC = () => {
                   <img
                     src={skill.icon}
                     alt={skill.name}
-                    className="w-14 h-14" // Slightly increase the size
+                    className="h-14 w-14" // Slightly increase the size
                   />
                   <Typography
                     variant="h6"
                     component="div"
                     align="center"
-                    className="mt-3 text-sm font-semibold text-white" // Increase the size of text and ensure it is visible
+                    className="mt-3 text-xs sm:text-sm font-semibold text-white" // Increase the size of text and ensure it is visible
                   >
                     {skill.name}
                   </Typography>
