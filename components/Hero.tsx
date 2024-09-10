@@ -3,14 +3,49 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import { socialMedia } from '@/data'
+import { LinkPreview } from './ui/LinkPreview'
+import { TypewriterEffect, TypewriterEffectSmooth } from './ui/TypeWriterEffect'
 
 const Hero = () => {
+  const words = [
+    {
+      text: "A",
+    },
+    {
+      text: "Full",
+      className:"text-purple/90 dark:text-purple",
+    },
+    {
+      text: "Stack",
+      className:"text-purple/90 dark:text-purple",
+    },
+    {
+      text: "Cloud",
+      className:"text-purple/90 dark:text-purple",
+    },
+    {
+      text: "Software",
+      className:"text-purple/90 dark:text-purple",
+    },
+    {
+      text: "Engineer",
+      className:"text-purple/90 dark:text-purple",
+    },
+    {
+      text: "based in",
+    },
+    {
+      text: "United States",
+      className:"text-purple/90 dark:text-purple"
+    },
+  ];
   return (
     <div className="pb-20 pt-36">
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white"/>
-        <Spotlight className="-top-10 -left-full h-[80vh] w-[50vw]" fill="purple"/>
-        <Spotlight className="-top-40 -left-10 h-[80vh] w-[50vw]" fill="blue"/>
+        <Spotlight className="h-[80vh] w-[50vw] top-10 left-full" fill="purple"/>
+        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
 
       </div>
 
@@ -28,11 +63,11 @@ const Hero = () => {
           words= "Hi, I&apos;am Shreeraam Ramachandran">
           </TextGenerateEffect>
 
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl font-bold">
-           A Full Stack Cloud Software Engineer based in United Stated
-          </p>
+          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl font-bold">
+            <TypewriterEffectSmooth words={words} />
+          </div>
 
-          <a href="#about">
+          <a href="#projects">
             <MagicButton 
               title="View my work"
               icon={<FaLocationArrow/>}
@@ -43,7 +78,20 @@ const Hero = () => {
         </div>
       </div>
 
+      <div className="flex mt-16 flex-col justify-between items-center gap-2">
 
+        <div className="flex items-center md:gap-3 gap-6">
+        {socialMedia.map((info) => {
+   
+            return (
+                <a href={info.link} target="_blank" className="w-14 h-14 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg">
+                    <img src={info.img} alt="icons" width={30} height={30} />
+                </a>
+            
+            );
+        })}
+        </div>
+      </div>
     </div>
   )
 }
