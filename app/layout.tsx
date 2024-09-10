@@ -6,8 +6,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shreeraam portfolio",
-  description: "Perdonal portfolio of Shreeraam",
+  title: "Shreeraam | Software Engineer",
+  description: "A passionate software engineer portfolio.",
 };
 
 export default function RootLayout({
@@ -17,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/shreeraam.jpg"/>
       <body className={inter.className}>
       <ThemeProvider
             attribute="class"
