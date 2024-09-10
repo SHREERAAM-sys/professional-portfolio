@@ -85,7 +85,7 @@ const Hero = () => {
    
             return (
                 <a href={info.link} target="_blank" className="w-14 h-14 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg">
-                    <img src={info.img} alt="icons" width={30} height={30} />
+                    <img src={info.img} alt="icons" width={30} height={30} key={"test"}/>
                 </a>
             
             );
