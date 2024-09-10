@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+
+import React, { use } from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
@@ -6,12 +8,10 @@ import { FaLocationArrow } from 'react-icons/fa'
 import { socialMedia } from '@/data'
 import { LinkPreview } from './ui/LinkPreview'
 import { TypewriterEffect, TypewriterEffectSmooth } from './ui/TypeWriterEffect'
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const words = [
-    {
-      text: "A",
-    },
     {
       text: "Full",
       className:"text-purple/90 dark:text-purple",
@@ -40,6 +40,7 @@ const Hero = () => {
       className:"text-purple/90 dark:text-purple"
     },
   ];
+
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -63,9 +64,13 @@ const Hero = () => {
           words= "Hi, I&apos;am Shreeraam Ramachandran">
           </TextGenerateEffect>
 
-          <div className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl font-bold">
+          <div className="text-center md:tracking-wider  text-sm md:text-lg lg:text-xl font-bold">
             <TypewriterEffectSmooth words={words} />
           </div>
+          {/* <div className="text-center md:tracking-wider mb-4 text-xs md:text-sm lg:text-xl font-bold">
+           Experienced in Software Architecting,Full Stack Engineering, Cloud based development and DevOps
+          </div> */}
+          
 
           <a href="#projects">
             <MagicButton 
@@ -74,6 +79,7 @@ const Hero = () => {
               position="right"
             />
           </a>
+          
 
         </div>
       </div>
