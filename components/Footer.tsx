@@ -34,15 +34,16 @@ const Footer = () => {
       <div className="flex mt-16 flex-col justify-between items-center gap-2">
 
         <div className="flex items-center md:gap-3 gap-6">
+        
+
         {socialMedia.map((info, index) => {
-   
-            return (
-            
-                <div key={index} className="w-14 h-14 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg">
-                    <img src={info.img} alt="icons" width={30} height={30} />
-                </div>
-            
-            );
+          
+          return (
+              <a href={info.link} key={index} target="_blank" className="w-14 h-14 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 transform transition-transform duration-300 ease-in-out hover:scale-110 hover:shadow-lg">
+                  <img src={info.img} alt="icons" width={30} height={30} />
+              </a>
+          
+          );
         })}
         </div>
       </div>
