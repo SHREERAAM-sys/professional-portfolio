@@ -30,6 +30,14 @@ export default function RootLayout({
         {children}
         </ThemeProvider>
       </body>
+      {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-BRM7P1WP0B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BRM7P1WP0B');
+        </script> */}
     </html>
   );
 }

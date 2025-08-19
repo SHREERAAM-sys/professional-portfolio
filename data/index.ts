@@ -16,69 +16,69 @@ export const navItems = [
     
   ];
   
-  export const gridItems = [
-    {
-      id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
-      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full",
-      titleClassName: "justify-end",
-      img: "/b1.svg",
-      spareImg: "",
-    },
-    {
-      id: 2,
-      title: "I'm very flexible with time zone communications",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 3,
-      title: "My tech stack",
-      description: "I constantly try to improve",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-      imgClassName: "",
-      titleClassName: "justify-center",
-      img: "",
-      spareImg: "",
-    },
-    {
-      id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
-    },
+  // export const gridItems = [
+  //   {
+  //     id: 1,
+  //     title: "I prioritize client collaboration, fostering open communication ",
+  //     description: "",
+  //     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+  //     imgClassName: "w-full h-full",
+  //     titleClassName: "justify-end",
+  //     img: "/b1.svg",
+  //     spareImg: "",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "I'm very flexible with time zone communications",
+  //     description: "",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  //     imgClassName: "",
+  //     titleClassName: "justify-start",
+  //     img: "",
+  //     spareImg: "",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "My tech stack",
+  //     description: "I constantly try to improve",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+  //     imgClassName: "",
+  //     titleClassName: "justify-center",
+  //     img: "",
+  //     spareImg: "",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Tech enthusiast with a passion for development.",
+  //     description: "",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //     imgClassName: "",
+  //     titleClassName: "justify-start",
+  //     img: "/grid.svg",
+  //     spareImg: "/b4.svg",
+  //   },
   
-    {
-      id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
-      className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-      titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
-    },
-    {
-      id: 6,
-      title: "Do you want to start a project together?",
-      description: "",
-      className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-      imgClassName: "",
-      titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-      img: "",
-      spareImg: "",
-    },
-  ];
+  //   {
+  //     id: 5,
+  //     title: "Currently building a JS Animation library",
+  //     description: "The Inside Scoop",
+  //     className: "md:col-span-3 md:row-span-2",
+  //     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+  //     titleClassName: "justify-center md:justify-start lg:justify-center",
+  //     img: "/b5.svg",
+  //     spareImg: "/grid.svg",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Do you want to start a project together?",
+  //     description: "",
+  //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  //     imgClassName: "",
+  //     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+  //     img: "",
+  //     spareImg: "",
+  //   },
+  // ];
   
   export const projects = [
     {
@@ -155,6 +155,7 @@ export const navItems = [
       { name: 'Packer', icon: '/packer.svg' },
       { name: 'Linux', icon: '/linux.svg' },
       { name: 'Git', icon: '/git_logo.svg' },
+      { name: 'Docker', icon:'/Docker.svg'},
       
       
     ],
@@ -162,6 +163,9 @@ export const navItems = [
     Basic:[
       { name: 'HTML', icon: '/html.svg' },
       { name: 'Sass', icon: '/sass.svg' },
+      { name: 'NodeJS', icon: '/Node.svg' },
+
+    
     ],
     Python:[
       { name: 'Python', icon: '/python.svg' },
@@ -170,6 +174,7 @@ export const navItems = [
     
     Database: [
       { name: 'MySQL', icon: '/mysql.svg' },
+      { name: 'OracleDB', icon: '/Oracle.svg' },
       { name: 'MongoDB', icon: '/mongo.svg' },
     ],
    
@@ -214,7 +219,7 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Technical Staff (Software Engineer)",
+      title: "Software Engineer",
       company: "Zoho Corporation",
       date: "January 2022 - August 2023",
       sections: [
@@ -243,7 +248,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Application Development Analyst",
+      title: "Software Development Analyst",
       company: "Accenture",
       date: "August 2021 - December 2021",
       sections: [
@@ -251,9 +256,14 @@ export const navItems = [
           heading: undefined,
           ref: undefined,
           desc: [
-            "Oversaw the development of a real-time inventory tracking system designed to streamline supply chain operations. This project involved integrating Spring Boot microservices to manage vendors and materials efficiently",
-            "Enhanced product capabilities by 25% through the implementation of Spring Boot microservices for vendor and material management, significantly optimizing stock-level management and procurement processes",
-            "Utilized Spring MVC to implement and refine vendor procurement processes, resulting in more efficient stock-level management and improved overall system performance",
+
+          "Developed fault-tolerant, highly available microservices using Spring Boot and Kafka to process 2000+ inventory events daily, following SDLC best practices,enabling real-time stock level tracking, demand forecasting, and proactive restocking",
+          "Achieved 95% code coverage, cut defects by 40% via TDD using JUnit and Mockito, ensuring reliable, error-free deployments",
+          "Integrated circuit breakers and retries to enhance service resilience, improving uptime and reducing recovery time by 60%",
+          "Built CI/CD pipelines using Jenkins, containerized applications with Docker, automated builds, reducing deployment time by 30%",
+            // "Oversaw the development of a real-time inventory tracking system designed to streamline supply chain operations. This project involved integrating Spring Boot microservices to manage vendors and materials efficiently",
+            // "Enhanced product capabilities by 25% through the implementation of Spring Boot microservices for vendor and material management, significantly optimizing stock-level management and procurement processes",
+            // "Utilized Spring MVC to implement and refine vendor procurement processes, resulting in more efficient stock-level management and improved overall system performance",
           ]
         }
       ],
